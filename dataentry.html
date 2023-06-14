@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>scan</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Point Of Sales</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data Entry</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stocks</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                </a>
+                <ul class="dropdown-menu">Maintenance
+                  <li><a class="dropdown-item" href="#">Add Stocks</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                    </a>    
+                <ul class="dropdown-menu">Reports
+                    <li><a class="dropdown-item" href="#">Cash Denomination Breakdown Report</a></li>
+                    <li><a class="dropdown-item" href="#">Change Fund Denomination Breakdown Report</a></li>
+                    <li><a class="dropdown-item" href="#">Charge Sales Breakdown Report</a></li>
+                    <li><a class="dropdown-item" href="#">Daily Sales Report</a></li>
+                    <li><a class="dropdown-item" href="#">Ending Sales</a></li>
+                    <li><a class="dropdown-item" href="#">Official Receipt Reprinting</a></li>
+                    <li><a class="dropdown-item" href="#">Sales Register</a></li>
+                    <li><a class="dropdown-item" href="#">Ending Sales Reprinting</a></li>
+                    <li><a class="dropdown-item" href="#">Transaction Posting</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="container w-100 py-5 h-2;">
+        <div class="col-lg-8">
+            <form class="p-4 p-md-1 border rounded-3 bg-light" action="#">
+                <div class="container text-center mb-1"></div>
+            <div class="form-floating">Advanced Search:
+                <input type="text" class="form-control" id="Advancedsearch" placeholder="type here">
+                <br>
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"> Search </span> 
+                  </button>           
+            </div><Br>
+            </form>    
+        </div>        
+    </div>            
+
+<div class="container w-100 py-5 h-2;">
+    <div class="row">
+        <form class="p-4 p-md-1 border rounded-3 bg-light" action="#">
+        <div class="col bg-light border m-2 p-2">MyPOS
+            <div class="row">
+                <div class="col-lg-8 bg-light border m-2 p-2">Sales Transaction Entry
+                    <div class="row"> 
+                        <div class="col bg-light border m-2 p-2">
+                            <button>f1</button>
+                        </div>
+                        <div class="col bg-light border m-2 p-2"><button>f2</button>
+                        </div>
+                        <div class="col bg-light border m-2 p-2"><button>f3</button>
+                        </div>
+                        <div class="col bg-light border m-2 p-2"><button>f4</button>
+                        </div>
+                        <div class="col bg-light border m-2 p-2"><button>f5</button>
+                        </div>
+                    </div>                   
+                    <div class="row">
+                        <div class="col bg-light border m-2 p-2">Product Code:
+                            <input type="text" id="prodcode">
+                        </div>
+                        <div class="col bg-light border m-2 p-2">Description:
+                            <input type="text" id="Description">
+                        </div>
+                        <div class="col bg-light border m-2 p-2">Quantity:
+                            <input type="number" id="Quantity">
+                        </div>
+                        <div class="col bg-light border m-2 p-2">Price:
+                            <input type="text" id="price">
+                        </div>
+                        <div class="col bg-light border m-2 p-2">Discount:
+                            <input type="percentage" id="Discount">
+                        </div>
+                        <div class="col bg-light border m-2 p-2">Total:
+                            <input type="text" id="Total">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 bg-light border m-2 p-2">Total Amount:
+                    <div class="col bg-light border m-2 p-2"></div>
+                    <div class="row">
+                        <div class="col bg-light border m-2 p-2">a
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>aaaa</th>
+                                        <th>aaaa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                       <tr>
+                                        <td>1111</td>
+                                        <td>1111</td>
+                                       </tr>
+                                       <tr>
+                                        <td>1111</td>
+                                        <td>1111</td>
+                                       </tr>
+                                       <tr>
+                                        <td>1111</td>
+                                        <td>1111</td>
+                                       </tr>
+                                       <tr>
+                                        <td>1111</td>
+                                        <td>1111</td>
+                                       </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>    
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
