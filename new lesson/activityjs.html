@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> getelementbyID     (1) </h1> 
+
+    <p id="Cake"> </p>
+
+    <script> 
+    document.getElementById("Cake").innerHTML= "So sweet";
+    </script>
+
+    <br> <br>
+<!----------Changing HTML style------------->
+
+<h3> Changing html style (2)</h3>
+<p id="practise"> How are you </p>
+
+<script> 
+document.getElementById("practise").style.color = "green";
+</script>
+
+<br> <br>
+<!----------Changing HTML style event------------->
+
+<h1 id="heading"> cookies </h1>
+<button type="button" onclick="document.getElementById('heading').style.color='brown'"> Click Me</button>
+
+<br> <br>
+
+    
+    <!----------DOM APPEND------------->
+ <h2>APPEND sample 1</h2>
+
+ <ul id="sweets"> 
+   <li> Ice Cream </li>
+   <li> Lolipop </li>
+   <li> Chocolate </li>
+ </ul>
+
+ <button onmouseover="myFunction()"> Add on list</button>
+
+ <script> 
+
+ function myFunction () {
+   const node = document.createElement("li");
+
+   const textnode = document.createTextNode("Cake");
+
+   node.appendChild (textnode);
+
+   document.getElementById("sweets").appendChild(node);
+ }
+ </script>
+ <!----append-->
+
+<!----------DOM remove------------->
+<h2>Remove Sample 2  </h2>
+<ul id="sweets"> 
+    <li> Ice Cream </li>
+    <li> Lolipop </li>
+    <li> Chocolate </li>
+</ul>
+ 
+<button onmouseover="myFunction1()"> Remove </button>
+
+<script> 
+function myFunction1() {
+   const element = document.getElementById ("sweets");
+   element.remove();
+
+}
+</script>
+<!----------DOM Replace------------->
+
+<h2> Replacechild method sample 3</h2>
+
+<ul id="cold"> 
+    <li>icepop</li>
+    <li>smoothies</li>
+    <li>shake</li>
+</ul>
+
+<button onclick="myFunction2()"> Replace </button>
+
+<script> 
+
+function myFunction2() {
+    const element = document.getElementById("cold").children[0];
+
+    const newNode = document.createTextNode("icecream");
+
+    element.replaceChild(newNode, element.childNodes[0]);
+}
+
+
+
+</script>
+</body>
+</html>
