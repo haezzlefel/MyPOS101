@@ -66,8 +66,14 @@
       </nav>
     <!-----navbar end---->
     
-    <div class="container w-100 py-5 h-2;">
-        <div class="col-lg-8">
+
+<!---encoding section-start---->              
+ 
+<div class="container bg-light my-5 br-2 border rounded-3" >
+  <div class="row g-3">
+      <div class="col">
+          
+          <form>
             <form class="p-4 p-md-1 border rounded-3 bg-light" action="#">
                 <div class="container text-center mb-1"></div>
             <div class="form-floating">Advanced Search:
@@ -78,16 +84,6 @@
                   </button>           
             </div><Br>
             </form>    
-        </div>        
-    </div>            
-
-<!---encoding section-start---->              
- 
-<div class="container bg-light my-5 br-2 border rounded-3" >
-  <div class="row g-3">
-      <div class="col">
-          
-          <form>
               <div class="row">
                   <div class="col-md-4">
                       <label class="form-label" form="Productcode">Product Code:</label>
@@ -97,14 +93,11 @@
                       <label class="form-label" form="Description">Description:</label>
                       <input type="text" id="Description" class="form-control">
                   </div>
-                  <div class="col-md-4">
-                      <label class="form-label" for="Quantity">Quantity:</label>
-                      <div class="input-group">
- 
-                          <input type="text" class="form-control" id="quantity">
-                      </div>
-                  </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4">    
+                    <label class="form-label" form="Quantity">Quantity:</label>
+                    <input type="text" id="Quantity" class="form-control">
+                </div>                  
+                    <div class="col-md-4">
                       <label class="form-label" form="price">Price:
                       </label>
                       <input type="text" id="price" class="form-control">
@@ -114,49 +107,33 @@
                       <input type="text" id="Discount" class="form-control">
                   </div>
                   <div class="col-md-4">
-                      <label class="form-label" form="Total">Total:</label>
+                      <label class="form-label" form="Total">Price:</label>
                       <input type="text" id="Total" class="form-control">        
                   </div>
               
               <hr>
-              <h4>Payment Type</h4>
-              <div class="form-check">
-                  <input type="radio" class="form-check-input">
-                  <label class="form-check-label">Cash</label>
-              </div>
-
-              <div class="form-check">
-                  <input type="radio" class="form-check-input">
-                  <label class="form-check-label">Credit Card</label>
-              </div>
-
-              <div class="form-check">
-                  <input type="radio" class="form-check-input">
-                  <label class="form-check-label">Debit Card</label>
-              </div>
-              <div class="row">
-                  <div class="col-6">
-                      <label class="form-label" for="cardname"></label>
-                      <input type="text" id="cardname" class="form-control">
-                      <small class="text-muted"> Full name as displayed on card</small>
+              <h4>Sales Transaction Entry</h4>
+              <div >
+                <button type="button" class="btn btn-info"> f1 Save </button>
+                <button type="button" class="btn btn-info"> f2 Suspend </button>
+                <button type="button" class="btn btn-info"> f3 Return </button>
+                <button type="button" class="btn btn-info"> f4 Restore </button>
+                <button type="button" class="btn btn-info"> f5 Discount </button>
+                <button type="button" class="btn btn-info"> f6 Return </button>
+                <button type="button" class="btn btn-info"> f7 Reset </button>
+                <button type="button" class="btn btn-info"> f8 Quantity </button>
+                <button type="button" class="btn btn-info"> f9 VAT Exempt </button>
+                </div>
+              
+                  <div class="col-8">
+                      <label class="form-label" for="purchaseditems"> Purchased Items:</label>
+                      <input type="text" id="purchaseditems" class="form-control">
                   </div>
-                  <div class="col-6">
-                      <label class="form-label" for="creditcard"> Credit Card Number</label>
-                      <input type="text" id="cardname" class="form-control">
-                      
-                  </div>
-                  <div class="col-3">
-                      <label class="form-label" for="expiration"> Expiration</label>
-                      <input type="text" id="expiration" class="form-control">
-                      
-              </div>
-              <div class="col-3">
-                  <label class="form-label" for="cvv"> CVV</label>
-                  <input type="text" id="cvv" class="form-control">
-              </div>
-              <hr>
-              <button type="submit" class="btn btn-warning mb-2">Back</button>
-              <button type="submit" class="btn btn-info mb-2">Enter</button>
+                <hr>
+                <div>
+              <button type="button" class="btn btn-warning">Back</button>
+                <button type="button" class="btn btn-info">Enter</button>
+                </div>  
           </form>
       </div>
           </div>
@@ -166,116 +143,6 @@
 <br>    
 
 <br>
-
-        
-<!---encoding section-end---->              
-
-<div class="container w-100 py-5 h-2;">
-    <div class="row">
-        <form class="p-4 p-md-1 border rounded-3 bg-light" action="#">
-        <div class="col bg-light border m-2 p-2">MyPOS
-            <div class="row">
-                <div class="col-lg-8 bg-light border m-2 p-2">Sales Transaction Entry
-                    <div class="row"> 
-                        <div class="col bg-light border m-2 p-2">
-                            <button>f1</button>
-                        </div>
-                        <div class="col bg-light border m-2 p-2"><button>f2</button>
-                        </div>
-                        <div class="col bg-light border m-2 p-2"><button>f3</button>
-                        </div>
-                        <div class="col bg-light border m-2 p-2"><button>f4</button>
-                        </div>
-                        <div class="col bg-light border m-2 p-2"><button>f5</button>
-                        </div>
-                    </div>                   
-                    <div class="row">
-                        <div class="col bg-light border m-2 p-2">Product Code:
-                            <input type="text" id="prodcode">
-                        </div>
-                        <div class="col bg-light border m-2 p-2">Description:
-                            <input type="text" id="Description">
-                        </div>
-                        <div class="col bg-light border m-2 p-2">Quantity:
-                            <input type="number" id="Quantity">
-                        </div>
-                        <div class="col bg-light border m-2 p-2">Price:
-                            <input type="text" id="price">
-                        </div>
-                        <div class="col bg-light border m-2 p-2">Discount:
-                            <input type="percentage" id="Discount">
-                        </div>
-                        <div class="col bg-light border m-2 p-2">Total:
-                            <input type="text" id="Total">
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!----draft------->
-                <div class="col-3 bg-light border m-2 p-2">Total Amount:
-                    <div class="col bg-light border m-2 p-2"></div>
-                    <div class="row">
-                        <div class="col bg-light border m-2 p-2">a
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>aaaa</th>
-                                        <th>aaaa</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                       <tr>
-                                        <td>1111</td>
-                                        <td>1111</td>
-                                       </tr>
-                                       <tr>
-                                        <td>1111</td>
-                                        <td>1111</td>
-                                       </tr>
-                                       <tr>
-                                        <td>1111</td>
-                                        <td>1111</td>
-                                       </tr>
-                                       <tr>
-                                        <td>1111</td>
-                                        <td>1111</td>
-                                       </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="container text-center">
-                <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-                <div class="row">
-                  <div class="col bg-light border m-2 p-2">Purchased Items</div>
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                </div>
-                <div class="row">
-                  <div class="col bg-light border m-2 p-2">Scan items here
-                    <input type="text" id="prodcode">
-                  </div>
-                </div>
-                <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-                <div class="row">
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                  <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                </div>
-              
-                <!-- Columns are always 50% wide, on mobile and desktop -->
-                <div class="row">
-                  <div class="col-6">.col-6</div>
-                  <div class="col-6">.col-6</div>
-                </div>
-              </div>
-        </form>    
-        </div>
-    </div>
-</div>
-<!------draft ------>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
