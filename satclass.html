@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3> Array Literal </h3>
+    <p id="A1"> </p>
+    <p id="A2"> </p>
+    <p id="A3"> </p>
+    <p id="A4"> </p>
+    <p id="A5"> </p>
+
+    <script> 
+
+    let stringArray = ["one", "two", "three"];
+    let numericArray = [1, 2, 3, 4];
+    let decimalArray = [1.1, 2.1, 3.1, 4.1];
+    let booleanArray = [true, false, false, true];
+
+    let mixdata = ["wd69p", 4, 423423.2342341, true ];
+    
+
+    document.getElementById("A1").innerHTML = stringArray;
+
+    document.getElementById("A2").innerHTML = numericArray;
+    
+    document.getElementById("A3").innerHTML =   decimalArray;
+
+    document.getElementById("A4").innerHTML =   booleanArray;
+    
+    document.getElementById("A5").innerHTML = mixdata;
+    </script>
+
+<br>
+
+<!---------------------stack-------------------------->
+
+<h3> Push and Pop Method </h3>
+
+<p id="demo"> </p>
+<p id="demo1"> </p>
+
+<script>
+
+class Stack {
+    constructor () {
+        this.items = [];
+    }
+
+add(element) {
+    return this.items.push(element);
+}
+
+remove() {
+    return this.items.pop();
+}
+
+size() {
+    return this.items.length;
+}
+
+
+}
+let stack = new Stack();
+stack.add(1);
+stack.add(2);
+stack.add(3);
+stack.add(4);
+stack.add(5);
+
+document.getElementById("demo").innerHTML = stack.items;
+
+stack.remove();
+document.getElementById("demo1").innerHTML = stack.items;
+
+console.log (stack.size());
+
+</script>
+
+<br> <br>
+
+<!---------------------Enqueue and dequeue-------------------------->
+
+<h3> Enqueue and dequeue </h3>
+<p id="demo2"> </p>
+<p id="demo3"> </p>
+
+<script> 
+
+class Queue {
+    constructor () {
+        this.items = [];
+    }
+
+    enqueue(element) {
+        return this.items.push(element);
+    }
+
+    dequeue() {
+            return this.items.shift();
+        }
+
+}
+
+let queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.enqueue(4);
+
+document.getElementById("demo2").innerHTML =  queue.items;
+
+queue.dequeue();
+document.getElementById("demo3").innerHTML = queue.items;
+
+</script>
+
+
+    <!-----recursion recursive-->
+   <script>
+    
+    function countDown(number){
+        console.log (number);
+
+    }
+    const newNumber = number - 1;
+
+    if (newNumber > 0) {
+         countDown (newNumber);
+         
+    }
+        countDown(10);
+   </script> 
+
+   <!---------------------Assignment and Arithmetic operator-------------------------->
+
+<h3> JS Assignment and arithmetic operator </h3>
+
+<p id="demo4"> </p>
+
+<script>
+
+    let x = 4;
+    let y = 3;
+    let z = x + y;
+
+    document.getElementById("demo4").innerHTML = "The sum of x + y is" + " " + z;
+</script>
+
+    
+
+
+
+<br> <br>
+
+<!---------------------conditional statement-------------------------->
+
+<h3> JS conditional statement </h3>
+
+<p id="demo5"> </p>
+
+<script>
+
+const number = prompt("Enter a number: ")
+
+//check if the number is greater than 0
+if (number > 0 ) {
+    document.getElementById("demo5").innerHTML = number + " " + "the number is positive";
+}
+
+else if (number == 0) {
+    document.getElementById("demo5").innerHTML = number + " " + "the number is Zero";
+}
+
+//check if the number is negative.
+else {
+    document.getElementById("demo5").innerHTML = number + " " + "the number is negative";
+}
+
+</script>
+!---------------------Assignment and Arithmetic operator-------------------------->
+
+<h3> JS Assignment and arithmetic operator </h3>
+
+<p id="demo4"> </p>
+
+<script>
+
+    let x = 4;
+    let y = 3;
+    let z = x + y;
+
+    document.getElementById("demo4").innerHTML = "The sum of x + y is" + " " + z;
+</script>
+
+    
+
+
+
+<br> <br>
+
+<!---------------------conditional statement-------------------------->
+
+<h3> JS conditional statement </h3>
+
+<p id="demo5"> </p>
+
+<script>
+
+const number = prompt("Enter a number: ")
+
+//check if the number is greater than 0
+if (number > 0 ) {
+    document.getElementById("demo5").innerHTML = number + " " + "the number is positive";
+}
+
+else if (number == 0) {
+    document.getElementById("demo5").innerHTML = number + " " + "the number is Zero";
+}
+
+//check if the number is negative.
+else {
+    document.getElementById("demo5").innerHTML = number + " " + "the number is negative";
+}
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3> Array Literal </h3>
+    <p id="A1"> </p>
+    <p id="A2"> </p>
+    <p id="A3"> </p>
+    <p id="A4"> </p>
+    <p id="A5"> </p>
+
+    <script> 
+
+    let stringArray = ["one", "two", "three"];
+    let numericArray = [1, 2, 3, 4];
+    let decimalArray = [1.1, 2.1, 3.1, 4.1];
+    let booleanArray = [true, false, false, true];
+
+    let mixdata = ["wd69p", 4, 423423.2342341, true ];
+    
+
+    document.getElementById("A1").innerHTML = stringArray;
+
+    document.getElementById("A2").innerHTML = numericArray;
+    
+    document.getElementById("A3").innerHTML =   decimalArray;
+
+    document.getElementById("A4").innerHTML =   booleanArray;
+    
+    document.getElementById("A5").innerHTML = mixdata;
+    </script>
+
+<br> <br>
+
+<!---------------------stack-------------------------->
+
+<h3> Push and Pop Method </h3>
+
+<p id="demo"> </p>
+<p id="demo1"> </p>
+
+<script>
+
+class Stack {
+    constructor () {
+        this.items = [];
+    }
+
+add(element) {
+    return this.items.push(element);
+}
+
+remove() {
+    return this.items.pop();
+}
+
+size() {
+    return this.items.length;
+}
+
+
+}
+let stack = new Stack();
+stack.add(1);
+stack.add(2);
+stack.add(3);
+stack.add(4);
+stack.add(5);
+
+document.getElementById("demo").innerHTML = stack.items;
+
+stack.remove();
+document.getElementById("demo1").innerHTML = stack.items;
+
+console.log (stack.size());
+
+</script>
+
+<br> <br>
+
+<!---------------------Enqueue and dequeue-------------------------->
+
+<h3> Enqueue and dequeue </h3>
+<p id="demo2"> </p>
+<p id="demo3"> </p>
+
+<script> 
+
+class Queue {
+    constructor () {
+        this.items = [];
+    }
+
+    enqueue(element) {
+        return this.items.push(element);
+    }
+
+    dequeue() {
+            return this.items.shift();
+        }
+
+}
+
+let queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.enqueue(4);
+
+document.getElementById("demo2").innerHTML =  queue.items;
+
+queue.dequeue();
+document.getElementById("demo3").innerHTML = queue.items;
+
+</script>
+
+</body>
+</html>
