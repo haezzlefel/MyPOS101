@@ -11,27 +11,27 @@
 </head>
 <body>
      
-    <div class="container col-8 my-5 br-2 rounded" >
+    <div class="container bg-light my-5 br-2 border rounded-3" >
         <div class="row g-3">
             <div class="col">
                 <H4>Cash Payment</H4>
                 <form>
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-4">
                             <label class="form-label" form="first name">First Name :</label>
                             <input type="text" id="firstname" class="form-control">
                         </div>   
-                        <div class="col-5">    
+                        <div class="col-7">    
                             <label class="form-label" form="last name">Last Name :</label>
                             <input type="text" id="lastname" class="form-control">
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <label class="form-label" for="tin">TIN :</label>
                             <div class="input-group">
                                 <input type="text" class="form-control" id="tin">
                             </div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-6">
                             <label class="form-label" form="companyname">Company :
                                 <span class="text-muted">(Optional)</span>
                             </label>
@@ -48,7 +48,7 @@
                                 <option>Philippines</option>
                             </select>
                         </div>
-                        <div class="col-4">
+                        <div class="col-5">
                             <label class="form-label" form="State">State</label>
                             <select class="form-select" id="state">
                                 <option>Choose</option>
@@ -58,13 +58,16 @@
                         </div>
                     </div>
                     <hr>
-                    <h4>Payment</h4>
-                    <div class="col-3">
-                        <label class="form-label" for="cash"> Cash</label>
-                        <input type="text" id="cash" class="form-control">
+                
+                    <div class="col-3">Enter Cash Amount here :
+                         <input type="text" placeholder="0.00" id="cash" class="form-control">
                     </div>
                     <hr>
-                    <button type="submit" class="btn btn-info btn-block mb-4">Confirm Payment</button>
+                    
+                    <button type="button" class="btn btn-default btn-info">
+                        <span class="glyphicon glyphicon-print"> Confirm </span> 
+                      </button>           
+                      <hr>
                 </form>
             </div>
                 </div>
