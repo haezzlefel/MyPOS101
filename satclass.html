@@ -406,46 +406,6 @@ document.getElementById("demo3").innerHTML = queue.items;
          </div>
 </div>
 
-<style>
-element.style {
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-        <div>
-      <h2>Retirement Calculator</h2>
-      <input type="text" placeholder="enter your current age" id="ageInput">
-      <p id="result">You are currently 36 years old. You have 34 years left until retirement.</p>
-    </div>
-    <script>
-      function calculateAge(event) {
-        const age = document.querySelector("#ageInput").value;
-        const retirementAge = 60;
-        const yearsLeft = retirementAge - age;
-        const result = document.querySelector("#result");
-
-        if (isNaN(age)) {
-          result.textContent =
-            "Invalid Input. Please enter a valid number for age.";
-        }
-
-        if (yearsLeft > 0) {
-          result.textContent = `You are currently ${age} years old. You have ${yearsLeft} years left until retirement.`;
-        } else if (yearsLeft === 0) {
-          result.textContent = `Congratulations! You have reach the retirement age of ${retirementAge}. Enjoy your retirement!`;
-        } else {
-          result.textContent = `You are already retired. Enjoy your retirement!`;
-        }
-      }
-
-      document
-        .querySelector("#ageInput")
-        .addEventListener("input", calculateAge);
-    </script>
-  
 
 
 </body>
