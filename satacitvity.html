@@ -11,14 +11,18 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container bg-light my-5 br-2 border rounded-3">
-<h2> Push and Pop </h2>
-
-<p id="aa">a<img src="/smile.png"></p>
-<p id="bb">b<img src="/smile3.png"></p>
-<p id="cc">c<img src="/smile2.png"></p>
-<p id="dd">d<img src="/star.png"></p>
-
+    <div class="container bg-light my-5 br-2 border rounded-3" >
+                  
+                        <div class="container text-center mb-1"></div>
+                                <div class="#">
+                                    <h2> Push and Pop </h2>
+                                 <p id="aa"><img src="/smile.png"></p>
+                                 <p id="bb"><img src="/smile3.png"></p>
+                                 <p id="cc"><img src="/smile2.png"></p>
+                                 <p id="dd"><img src="/star.png"></p>
+                                </div>
+                        </div>
+        </div>
 <script>
 
 class Stack {
@@ -39,11 +43,11 @@ size() {
 }
 }
 let stack = new Stack();
-stack.add(1);
-stack.add(2);
-stack.add(3);
-stack.add(4);
-stack.add(5);
+stack.add("smiley" );
+stack.add("smiley2");
+stack.add("smiley3");
+stack.add("smiley4");
+stack.add("smiley5");
 
 document.getElementById("aa").innerHTML = stack.items;
 stack.remove();
@@ -52,61 +56,7 @@ console.log (stack.size());
 
 </script>
 </div>
-<!-----recursion recursive-->
-  <div class="container bg-light my-2 br-2 border rounded-3" >
-    <div class="row g-3">
-        <div class="col-md-6">
-              <form class="p-4 p-md-1  bg-light" action="#">
-                  <div class="container text-center mb-1"></div>
-                    <div class="form-floating">
-                        <h4>CountDown:</h4>
-                        <input type="number" class="" id="countDown">
-                        <br>
-                        <br>
-                        <button type="button"  class="btn btn-default btn-info">
-                        <span class="glyphicon glyphicon-play"></span> 
-                    </button>           
-                    </div><Br>
-              </form>    
-                     <script>
-    
-                    function countDown(seconds){
-                        if seconds  = 0{
-                            document.getElementById("timer").textContent = "Countdown Complete";
-                            document.getElementById("timer").style.fontSize="x-large";
-                            document.getElementById("button").disabled = false;
-                            return;
-                        }     
 
-                        if (seconds > 10) {
-                            document.getElementById ("timer").style.color = "blue";
-                            document.getElementById ("button").disabled = true;    
-                        }
-                        if (seconds > 10) {
-                            document.getElementById("timer").style.color = "red";
-                        }
-                        if (seconds <=5){
-                            document.getElementById("timer").style.color = "purple";
-
-                        }
-                            doument.getElementById("timer").textContent = seconds;
-
-                        setTimeout(
-                            function() {
-                                countDown(seconds - 1);
-                            }.1000
-                        );
-                        }
-                            function startCountdown() {
-                                var input = document.getElementById("input").value;
-
-                                document.getElementById ("timer").innerHTML = "";
-                                countDown (input);
-                            }
-                    </script> 
-    </div>
-         </div>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
