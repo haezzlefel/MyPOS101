@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg" style="background-color:#3fb4ce;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MyPOS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reports
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="cash denomination.html">Cash Denomination Breakdown Report</a></li>
+                    <li><a class="dropdown-item" href="changefund.html">Change Fund Denomination Breakdown Report</a></li>
+                    <li><a class="dropdown-item" href="#">Charge Sales Breakdown Report</a></li>
+                    <li><a class="dropdown-item" href="#">Daily Sales Report</a></li>
+                    <li><a class="dropdown-item" href="#">Ending Sales</a></li>
+                    <li><a class="dropdown-item" href="#">Official Receipt Reprinting</a></li>
+                    <li><a class="dropdown-item" href="transaction receipts.html">Sales Register</a></li>
+                    <li><a class="dropdown-item" href="#">Ending Sales Reprinting</a></li>
+                    <li><a class="dropdown-item" href="#">Transaction Posting</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inventory
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Stock Card Index</a></li>
+                    <li><a class="dropdown-item" href="#">Add Stocks Manually</a></li>
+                    <li><a class="dropdown-item" href="#">Upload Delivery Receipts</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-----navbar end---->
+    <div class="container bg-light my-5 br-2 border rounded-3" >
+        <div class="row g-3">
+            <div class="col">
+                  <form class="p-4 p-md-1  bg-light" action="#">
+                      <div class="container text-center mb-1"></div>
+                  <div class="form-floating">
+                      <h4>Advanced Search:</h4>
+                      <input type="text" class="form-control" id="Advancedsearch" placeholder="type here">
+                      <br>
+                      <button type="button" class="btn btn-default btn-info">
+                          <span class="glyphicon glyphicon-search"> Search </span> 
+                        </button>           
+                  </div><Br>
+      
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label" form="Productcode">Product Code:</label>
+                            <input type="text" id="Productcode" class="form-control">
+                        </div>   
+                        <div class="col-md-6">    
+                            <label class="form-label" form="Description">Description:</label>
+                            <input type="text" id="Description" class="form-control">
+                        </div>
+                        <div class="col-md-2">    
+                          <label class="form-label" form="Quantity">Quantity:</label>
+                          <input type="text" id="Quantity" class="form-control">
+                      </div>                  
+                          <div class="col-md-4">
+                            <label class="form-label" form="price">Price:
+                            </label>
+                            <input type="text" id="price" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label" form="Discount">Discount:</label>
+                            <input type="text" id="Discount" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label" form="Producttype">Product Type:</label>
+                            <input type="text" id="proucttype" class="form-control">        
+                        </div>
+                    
+                    <hr>
+                  </form>    
+</body>
+</html>
