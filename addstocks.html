@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="dataentry.js" async></script>
+    <title>add stocks list</title>
+</head>
+<body> 
+    <section class="container content-section">
+        <h2 class="section-header">unobels</h2>
+    <div class="shop-items"> 
+        <div class="shop-item">
+            <span class="shop-item-title">Album 1</span> <img class="shop-item-image" src="images/seag.png">
+            <div class="shop-item-details"> <span class="shop-item-price">$12.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    <div class="shop-item">
+        <div class="shop-items"> 
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span> <img class="shop-item-image" src="images/seag.png">
+                <div class="shop-item-details"> <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        <div class="shop-item">
+            <div class="cart-row">
+                <div class="cart-item cart-column"> <img class="cart-item-image" src="images/seag.png"
+                width="100" height="100">
+                <span class="cart-item-title">Album 3</span>    
+                </div>
+                <span class="cart-price cart-column">$9.99</span>
+                <div class="cart-quantity cart-column"> <input class="cart-quantity-input" type="number" value="2"" value="1">
+                <button class="btn btn-danger" type="button"> REMOVE</button>
+                </div>
+                </div>
+                </div>
+                <div class="cart-total">
+                <strong class="cart-total-title">Total</strong> <span class="cart-total-price">$39.97</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE </button>
+                
+                </section>
+                
+<!---append child i need this for add stocks--- -->
+<h4>Product list</h4>
+<ul id="mylist">
+  <li>Goggles</li>
+  <p>Product code  :my00001</p>
+  <p>Description : Blue Goggles  </p>
+  <p>Price : 499.00</p>
+  <p>Discount 0.00</p>
+  
+  <li>Earplugs</li>
+  <p>Product code : my00002</p>
+  <p>Description : Silicon Earplugs</p>
+  <p>Price : 399.00</p>
+  <p>Discount 0.00</p>
+  
+  <li>Trunks</li>
+  <p>Product code : my00003</p>
+  <p>Description : Jammers </p>
+  <p>Price : 2599.00</p>
+  <p>Discount 0.00</p>
+  
+  <li>Snorkel</li>
+  <p>Product code : my00004</p>
+  <p>Description : Centre Snorkel</p>
+  <p>Price : 1599.00</p>
+  <p>Discount 0.00</p>
+
+  <li>Pull Buoy</li>
+  <p>Product code : my00005</p>
+  <p>Description : Red Pull Buoy</p>
+  <p>Price : 1100.00</p>
+  <p>Discount 0.00</p>
+
+  <li>1pc Swimsuit</li>
+    <p>Product code : my00006</p>
+    <p>Description : 1pc Swimsuit</p>
+    <p>Price : 3888.00</p>
+    <p>Discount 0.00</p>
+  
+</ul>
+
+<button onclick="myFunction()">add stocks</button>
+<script>
+  function myFunction(){
+    const node = document.createElement("li","p");
+    const textnode = document.createTextNode("goggles");
+
+    node.appendChild(textnode);
+
+    document.getElementById("mylist").appendChild(node);
+
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
