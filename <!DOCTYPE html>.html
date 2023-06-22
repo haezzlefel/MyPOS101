@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<script>
+
+
+    </head>
+    <body>        
+        let promise = new Promise (function (resolve, reject) {
+            setTimeout(function () {
+                resolve ('Promise Resolved') }, 4000);
+        });
+    
+        async function asyncFunc() {
+            let result = await promise;
+    
+            console.log (result);
+            console.log ('hello')
+        }
+    
+        asyncFunc();
+    
+    
+            
+        </script>, initial-scale=1.0">
+    <title>Document</title>
+<!----------->
+    <script>
+        let promise = new Promise (function (resolve, reject) {
+            setTimeout(function () {
+                resolve ('Promise Resolved') }, 4000);
+        });
+    
+        async function asyncFunc() {
+            let result = await promise;
+    
+            console.log (result);
+            console.log ('hello')
+        }
+    
+        asyncFunc();
+    
+    
+            
+        </script>    
+
+
+
+<!--------->
+
+
+const count = true;
+
+let countValue = new Promise(function (resolve, reject) {
+  
+  if (count) {
+    resolve ("There is a count value");
+  } else {
+    reject ("There is no count Value");
+  }
+});
+
+console.log (countValue);
+
+<!----------->
+
+
+</body>
+</html>
